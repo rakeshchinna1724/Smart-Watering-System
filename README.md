@@ -34,5 +34,7 @@ An ESP32-based smart irrigation system using:
 - Buttons for relay and mode switch (AceButton)
 - Real-time monitoring with Blynk
 - Images :![alt text](esp32.png)
+        ![alt text](connections.png)
+        ![alt text](board.png)
 
 
