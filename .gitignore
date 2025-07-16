@@ -1,0 +1,6 @@
+*.bin
+*.elf
+*.hex
+.vscode/
+__pycache__/
+*.ino.*
