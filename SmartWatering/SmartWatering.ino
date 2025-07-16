@@ -11,12 +11,12 @@
 #define BLYNK_TEMPLATE_ID "" 
 #define BLYNK_TEMPLATE_NAME "" 
 #define BLYNK_AUTH_TOKEN "" 
-char ssid[] = "Rakesh"; //WiFi Name 
-char pass[] = "chinna1724"; //WiFi Password 
+char ssid[] = ""; //WiFi Name 
+char pass[] = ""; //WiFi Password 
 //Set the maximum wet and maximum dry value measured by the sensor 
 int wetSoilVal = 930 ;  //min value when soil is wet 
 int drySoilVal = 3000 ;  //max value when soil is dry
-[7/16/2025 8:18 PM] Rakesh Chinna: //Set ideal moisture range percentage(%) in soil 
+  //Set ideal moisture range percentage(%) in soil 
 int moistPerLow =   
 20 ;  //min moisture % 
 int moistPerHigh =   
@@ -72,8 +72,8 @@ int
 bool    
 sensorVal; 
 moisturePercentage; 
-toggleRelay = LOW; //Define to remember the toggle state
-[7/16/2025 8:18 PM] Rakesh Chinna: bool    prevMode = true; 
+toggleRelay = LOW; //Define to remember the toggle state bool   
+prevMode = true; 
 int     temperature1 = 0; 
 int     humidity1   = 0; 
 String  currMode  = "A"; 
@@ -121,7 +121,7 @@ BLYNK_CONNECTED() {
 void sendSMS(const char* message, int temperature, int humidity, int 
 moisturePercentage) { 
   HTTPClient http;
-[7/16/2025 8:18 PM] Rakesh Chinna: String url = "https://api.twilio.com/2010-04-01/Accounts/" + 
+String url = "https://api.twilio.com/2010-04-01/Accounts/" 
 String(TWILIO_ACCOUNT_SID) + "/Messages.json"; 
    
   http.begin(url.c_str()); 
@@ -217,7 +217,7 @@ void getMoisture(){
 100); 
     // Print result to serial monitor 
     Serial.print("Moisture Percentage: ");
-[7/16/2025 8:19 PM] Rakesh Chinna: Serial.print(moisturePercentage); 
+    Serial.print(moisturePercentage); 
     Serial.println(" %"); 
   } 
   else{ 
@@ -312,7 +312,7 @@ void setup() {
    
   button1.init(RelayButtonPin); 
   button2.init(ModeSwitchPin);
-[7/16/2025 8:19 PM] Rakesh Chinna: if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
     Serial.println(F("SSD1306 allocation failed")); 
     for(;;); 
   } 
