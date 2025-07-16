@@ -33,5 +33,6 @@ An ESP32-based smart irrigation system using:
 - OLED shows temperature, humidity, mode & moisture level
 - Buttons for relay and mode switch (AceButton)
 - Real-time monitoring with Blynk
+- Images :![alt text](esp32.png)
 
 
