@@ -8,9 +8,9 @@
 #include <WiFiServer.h> 
 #include <WiFiType.h> 
 #include <WiFiUdp.h> 
-#define BLYNK_TEMPLATE_ID "TMPL38IztqL-s" 
-#define BLYNK_TEMPLATE_NAME "waterplanting" 
-#define BLYNK_AUTH_TOKEN "4u-ANt4W5qVqTWsSU_BIM9ZadUJHkg_t" 
+#define BLYNK_TEMPLATE_ID "" 
+#define BLYNK_TEMPLATE_NAME "" 
+#define BLYNK_AUTH_TOKEN "" 
 char ssid[] = "Rakesh"; //WiFi Name 
 char pass[] = "chinna1724"; //WiFi Password 
 //Set the maximum wet and maximum dry value measured by the sensor 
@@ -81,10 +81,10 @@ String  currMode  = "A";
 char auth[] = BLYNK_AUTH_TOKEN; 
  
 // Twilio Credentials 
-#define TWILIO_ACCOUNT_SID "AC5ddf409b9147e4ded52c44d9ac91579a" 
-#define TWILIO_AUTH_TOKEN  "6fe480900fc86c1219d7dfd90bbe40dc" 
-#define TWILIO_PHONE_NUMBER "+12513331034" 
-#define RECIPIENT_PHONE_NUMBER "916281229675" 
+#define TWILIO_ACCOUNT_SID "" 
+#define TWILIO_AUTH_TOKEN  "" 
+#define TWILIO_PHONE_NUMBER "" 
+#define RECIPIENT_PHONE_NUMBER "" 
  
 ButtonConfig config1; 
 AceButton button1(&config1); 
